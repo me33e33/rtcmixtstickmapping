@@ -3,7 +3,7 @@
    load("COMBIT")
    control_rate(1000)
 
-   rtinput("/Users/meeshfradkin/Desktop/SINE_1.wav")
+   rtinput("../wav/SINE_1.wav")
 
    dur = 0.1
    ampenv = maketable("line", 1000, 0,0, 0.1,1, 1,0) 

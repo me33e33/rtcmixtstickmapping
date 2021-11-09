@@ -17,7 +17,7 @@ FMINST(0, dur, amp * env, carfreq, modfreq, minindex, maxindex, pan=0.5, wavetab
    rtsetparams(44100, 1)
    load("BUTTER")
 
-   rtinput("/Users/meeshfradkin/Desktop/SQUARE_1.wav")
+   rtinput("../wav/SQUARE_1.wav")
 
    ampenv = maketable("window", 1000, "hanning")
 
@@ -73,7 +73,7 @@ for (start = 5; start < total_length; start += irand(2,5))
 rtsetparams(44100, 2)
    load("JCHOR")
    
-   rtinput("/Users/meeshfradkin/Desktop/SAWTOOTH_1.wav")
+   rtinput("../wav/SAWTOOTH_1.wav")
    inchan = 0
    inskip = 0.20
    
